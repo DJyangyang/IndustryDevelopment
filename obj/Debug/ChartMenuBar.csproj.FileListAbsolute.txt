@@ -1,0 +1,65 @@
+F:\DoPrivate\MyPluginEngine-master\ChartMenuBar\obj\Debug\ChartMenuBar.csprojResolveAssemblyReference.cache
+F:\DoPrivate\MyPluginEngine-master\ChartMenuBar\obj\Debug\ChartMenuBar.AccessChartTableForm.resources
+F:\DoPrivate\MyPluginEngine-master\ChartMenuBar\obj\Debug\ChartMenuBar.ChartForm.resources
+F:\DoPrivate\MyPluginEngine-master\ChartMenuBar\obj\Debug\ChartMenuBar.csproj.GenerateResource.Cache
+F:\DoPrivate\MyPluginEngine-master\ChartMenuBar\bin\Debug\ChartMenuBar.dll
+F:\DoPrivate\MyPluginEngine-master\ChartMenuBar\bin\Debug\ChartMenuBar.pdb
+F:\DoPrivate\MyPluginEngine-master\ChartMenuBar\bin\Debug\MyPluginEngine.dll
+F:\DoPrivate\MyPluginEngine-master\ChartMenuBar\bin\Debug\log4net.dll
+F:\DoPrivate\MyPluginEngine-master\ChartMenuBar\bin\Debug\MyPluginEngine.pdb
+F:\DoPrivate\MyPluginEngine-master\ChartMenuBar\obj\Debug\ChartMenuBar.dll
+F:\DoPrivate\MyPluginEngine-master\ChartMenuBar\obj\Debug\ChartMenuBar.pdb
+D:\MyPluginEngine-master\ChartMenuBar\bin\Debug\ChartMenuBar.dll
+D:\MyPluginEngine-master\ChartMenuBar\bin\Debug\ChartMenuBar.pdb
+D:\MyPluginEngine-master\ChartMenuBar\bin\Debug\MyPluginEngine.dll
+D:\MyPluginEngine-master\ChartMenuBar\bin\Debug\log4net.dll
+D:\MyPluginEngine-master\ChartMenuBar\bin\Debug\MyPluginEngine.pdb
+D:\MyPluginEngine-master\ChartMenuBar\obj\Debug\ChartMenuBar.csprojResolveAssemblyReference.cache
+D:\MyPluginEngine-master\ChartMenuBar\obj\Debug\ChartMenuBar.AccessChartTableForm.resources
+D:\MyPluginEngine-master\ChartMenuBar\obj\Debug\ChartMenuBar.ChartForm.resources
+D:\MyPluginEngine-master\ChartMenuBar\obj\Debug\ChartMenuBar.csproj.GenerateResource.Cache
+D:\MyPluginEngine-master\ChartMenuBar\obj\Debug\ChartMenuBar.dll
+D:\MyPluginEngine-master\ChartMenuBar\obj\Debug\ChartMenuBar.pdb
+G:\yangyangHU-BU\暑期项目\ChartMenuBar-master\obj\Debug\ChartMenuBar.csprojResolveAssemblyReference.cache
+G:\yangyangHU-BU\暑期项目\ChartMenuBar-master\obj\Debug\ChartMenuBar.AccessChartTableForm.resources
+G:\yangyangHU-BU\暑期项目\ChartMenuBar-master\obj\Debug\ChartMenuBar.ChartForm.resources
+G:\yangyangHU-BU\暑期项目\ChartMenuBar-master\obj\Debug\ChartMenuBar.csproj.GenerateResource.Cache
+G:\yangyangHU-BU\暑期项目\ChartMenuBar-master\obj\Debug\ChartMenuBar.dll
+G:\yangyangHU-BU\暑期项目\ChartMenuBar-master\obj\Debug\ChartMenuBar.pdb
+G:\yangyangHU-BU\暑期项目\ChartMenuBar-master\bin\Debug\ChartMenuBar.dll
+G:\yangyangHU-BU\暑期项目\ChartMenuBar-master\bin\Debug\ChartMenuBar.pdb
+G:\yangyangHU-BU\暑期项目\ChartMenuBar-master\bin\Debug\MyPluginEngine.dll
+G:\yangyangHU-BU\暑期项目\ChartMenuBar-master\bin\Debug\log4net.dll
+G:\yangyangHU-BU\暑期项目\ChartMenuBar-master\bin\Debug\MyPluginEngine.pdb
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master\obj\Debug\ChartMenuBar.pdb
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master\obj\Debug\ChartMenuBar.AccessChartTableForm.resources
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master\obj\Debug\ChartMenuBar.ChartForm.resources
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master\obj\Debug\ChartMenuBar.csproj.GenerateResource.Cache
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master\bin\Debug\ChartMenuBar.exe
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master\bin\Debug\ChartMenuBar.pdb
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master\bin\Debug\log4net.dll
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master\bin\Debug\MyPluginEngine.pdb
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master\obj\Debug\ChartMenuBar.exe
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master - 副本\obj\Debug\ChartMenuBar.pdb
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master - 副本\obj\Debug\ChartMenuBar.AccessChartTableForm.resources
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master - 副本\obj\Debug\ChartMenuBar.ChartForm.resources
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master - 副本\obj\Debug\ChartMenuBar.csproj.GenerateResource.Cache
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master - 副本\bin\Debug\ChartMenuBar.dll
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master - 副本\bin\Debug\ChartMenuBar.pdb
+G:\yangyangHU-BU\暑期项目\功能性插件\ChartMenuBar-master - 副本\obj\Debug\ChartMenuBar.dll
+C:\Users\yangyang123\Desktop\ChartMenuBar-master - 副本\bin\Debug\ChartMenuBar.dll
+C:\Users\yangyang123\Desktop\ChartMenuBar-master - 副本\bin\Debug\ChartMenuBar.pdb
+C:\Users\yangyang123\Desktop\ChartMenuBar-master - 副本\obj\Debug\ChartMenuBar.csprojResolveAssemblyReference.cache
+C:\Users\yangyang123\Desktop\ChartMenuBar-master - 副本\obj\Debug\ChartMenuBar.AccessChartTableForm.resources
+C:\Users\yangyang123\Desktop\ChartMenuBar-master - 副本\obj\Debug\ChartMenuBar.ChartForm.resources
+C:\Users\yangyang123\Desktop\ChartMenuBar-master - 副本\obj\Debug\ChartMenuBar.csproj.GenerateResource.Cache
+C:\Users\yangyang123\Desktop\ChartMenuBar-master - 副本\obj\Debug\ChartMenuBar.dll
+C:\Users\yangyang123\Desktop\ChartMenuBar-master - 副本\obj\Debug\ChartMenuBar.pdb
+C:\Users\yangyang123\Desktop\线状统计图A\bin\Debug\ChartMenuBar.dll
+C:\Users\yangyang123\Desktop\线状统计图A\bin\Debug\ChartMenuBar.pdb
+C:\Users\yangyang123\Desktop\线状统计图A\obj\Debug\ChartMenuBar.AccessChartTableForm.resources
+C:\Users\yangyang123\Desktop\线状统计图A\obj\Debug\ChartMenuBar.ChartForm.resources
+C:\Users\yangyang123\Desktop\线状统计图A\obj\Debug\ChartMenuBar.frmDev.resources
+C:\Users\yangyang123\Desktop\线状统计图A\obj\Debug\ChartMenuBar.csproj.GenerateResource.Cache
+C:\Users\yangyang123\Desktop\线状统计图A\obj\Debug\ChartMenuBar.dll
+C:\Users\yangyang123\Desktop\线状统计图A\obj\Debug\ChartMenuBar.pdb
