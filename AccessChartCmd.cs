@@ -34,7 +34,7 @@ namespace ChartMenuBar
 
         public string Caption
         {
-            get { return "产业发展"; }
+            get { return "分行业用水效率"; }
         }
 
         public string Category
@@ -64,7 +64,7 @@ namespace ChartMenuBar
 
         public string Message
         {
-            get { return "产业发展"; }
+            get { return "分行业用水效率"; }
         }
 
         public string Name
@@ -88,7 +88,7 @@ namespace ChartMenuBar
 
         public string Tooltip
         {
-            get { return "产业发展"; }
+            get { return "分行业用水效率"; }
         }
         #endregion
     }

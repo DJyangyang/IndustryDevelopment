@@ -32,8 +32,7 @@ namespace ChartMenuBar
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             //去除图标
             this.ShowIcon = false;
-            //模拟的按钮默认false，以免没点开始直接点模拟按钮
-            btnSimulate.Enabled = false;
+
         }
         private void frmDev_Load(object sender, EventArgs e)
         {
@@ -49,21 +48,21 @@ namespace ChartMenuBar
             GraphPane myPane = zedGraphControl1.GraphPane;
             myPane.CurveList.Clear();
             myPane.GraphObjList.Clear();
-            myPane.Title.Text = "降水量趋势模拟";
+            myPane.Title.Text = "不同环境下用水总量对比模拟";
             myPane.XAxis.Title.Text = "年份";
-            myPane.YAxis.Title.Text = "年降水量";
+            myPane.YAxis.Title.Text = "用水总量";
             list1 = new PointPairList();
             list2 = new PointPairList();
             list3 = new PointPairList();
             list4 = new PointPairList();
             LineItem myCurve1 = null, myCurve2 = null, myCurve3 = null, myCurve4 = null;
-            myCurve1 = myPane.AddCurve("rcp2.6",
+            myCurve1 = myPane.AddCurve("农业",
                list1, Color.Red, SymbolType.Diamond);
-            myCurve2 = myPane.AddCurve("rcp4.5",
+            myCurve2 = myPane.AddCurve("工业",
                 list2, Color.Blue, SymbolType.Circle);
-            myCurve3 = myPane.AddCurve("rcp6.0",
+            myCurve3 = myPane.AddCurve("生活",
                list3, Color.Green, SymbolType.Star);
-            myCurve4 = myPane.AddCurve("rcp8.5",
+            myCurve4 = myPane.AddCurve("生态",
                 list4, Color.Orange, SymbolType.Square);
             myPane.Title.FontSpec.FontColor = Color.Green;
             myPane.XAxis.MajorGrid.IsVisible = true;
@@ -116,13 +115,13 @@ namespace ChartMenuBar
             if (pConn.State == ConnectionState.Closed)
                 pConn.Open();
             OleDbCommand cmd = pConn.CreateCommand();
-            cmd.CommandText = "Select id,years,rcp2,rcp4,rcp6,rcp8 From precipitation";
+            cmd.CommandText = "Select id,年份,总用水量,农业,工业,生活,生态 From water";
             OleDbDataAdapter oda = new OleDbDataAdapter(cmd);
             DataSet ds = new DataSet();
-            oda.Fill(ds, "precipitation");
+            oda.Fill(ds, "water");
             if (dt == null)
                 dt = new DataTable();
-            dt = ds.Tables["precipitation"];
+            dt = ds.Tables["water"];
         }
 
 
@@ -148,11 +147,11 @@ namespace ChartMenuBar
             for (int i = 0; i < 10; i++)
             {
                 Thread.Sleep(100);
-                double x = double.Parse(dt.Rows[i]["years"].ToString().Trim());
-                double y1 = double.Parse(dt.Rows[i]["rcp2"].ToString().Trim());
-                double y2 = double.Parse(dt.Rows[i]["rcp4"].ToString().Trim());
-                double y3 = double.Parse(dt.Rows[i]["rcp6"].ToString().Trim());
-                double y4 = double.Parse(dt.Rows[i]["rcp8"].ToString().Trim());
+                double x = double.Parse(dt.Rows[i]["年份"].ToString().Trim());
+                double y1 = double.Parse(dt.Rows[i]["农业"].ToString().Trim());
+                double y2 = double.Parse(dt.Rows[i]["工业"].ToString().Trim());
+                double y3 = double.Parse(dt.Rows[i]["生活"].ToString().Trim());
+                double y4 = double.Parse(dt.Rows[i]["生态"].ToString().Trim());
                 list1.Add(x, y1);
                 list2.Add(x, y2);
                 list3.Add(x, y3);
@@ -178,40 +177,31 @@ namespace ChartMenuBar
                     list4.RemoveAt(i);
                 }
             }
-            Int32 iEndYear = (Int32)txtEndYear.Value;
-            //double dRateTemp = rate / (iInflexionYear - 2012);
-            //double dRate = rate;
+
             double year;
 
-            for (int i = 0; i < iEndYear - 2015 + 1; i++)
-            {
+            //for (int i = 0; i < 1; i++)
+            //{
                 Thread.Sleep(200);
                 //产生模拟数据
                 //dRate = dRate - dRateTemp;
                 int iRowMaxIndex = dt.Rows.Count - 1;
                 DataRow dr = dt.NewRow();
-                year = double.Parse(dt.Rows[iRowMaxIndex]["years"].ToString().Trim());
+                year = double.Parse(dt.Rows[iRowMaxIndex]["年份"].ToString().Trim());
 
                 dr["id"] = int.Parse(dt.Rows[iRowMaxIndex]["id"].ToString().Trim()) + 1;
-                dr["years"] = int.Parse(dt.Rows[iRowMaxIndex]["years"].ToString().Trim()) + 1;
-                //年均温表达式如下
-                //rcp2.6: y = 144.18ln(x) - 1091.1
-                //rcp4.5：y = 119.27ln(x) - 901.75
-                //rcp6.0：y = 100.13ln(x) - 756.2
-                //rcp8.5：y = 99.874ln(x) - 754.25              
-                dr["rcp2"] = 144.18 * Math.Log(year) - 1091.1;
-                dr["rcp4"] = 119.27 * Math.Log(year) - 901.75;
-                dr["rcp6"] = 100.13 * Math.Log(year) - 756.2;
-                dr["rcp8"] = 99.874 * Math.Log(year) - 754.25;
+                dr["年份"] = int.Parse(dt.Rows[iRowMaxIndex]["年份"].ToString().Trim()) + 1;
+
+
                 dt.Rows.Add(dr);
 
                 //创建曲线图
 
-                double x = double.Parse(dt.Rows[iRowMaxIndex]["years"].ToString().Trim());
-                double y1 = double.Parse(dt.Rows[iRowMaxIndex]["rcp2"].ToString().Trim());
-                double y2 = double.Parse(dt.Rows[iRowMaxIndex]["rcp4"].ToString().Trim());
-                double y3 = double.Parse(dt.Rows[iRowMaxIndex]["rcp6"].ToString().Trim());
-                double y4 = double.Parse(dt.Rows[iRowMaxIndex]["rcp8"].ToString().Trim());
+                double x = double.Parse(dt.Rows[iRowMaxIndex]["年份"].ToString().Trim());
+                double y1 = double.Parse(dt.Rows[iRowMaxIndex]["农业"].ToString().Trim());
+                double y2 = double.Parse(dt.Rows[iRowMaxIndex]["工业"].ToString().Trim());
+                double y3 = double.Parse(dt.Rows[iRowMaxIndex]["生活"].ToString().Trim());
+                double y4 = double.Parse(dt.Rows[iRowMaxIndex]["生态"].ToString().Trim());
                 list1.Add(x, y1);
                 list2.Add(x, y2);
                 list3.Add(x, y3);
@@ -223,19 +213,17 @@ namespace ChartMenuBar
 
                 this.dgDataSource.DataSource = dt;
                 this.dgDataSource.Refresh();
-            }
+            //}
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
             LoadHistoryData();
-            btnSimulate.Enabled = true;
+
         }
-
-        private void btnSimulate_Click(object sender, EventArgs e)
-        {  LoadSimulationData();
-            btnStart.Enabled = false;   
-
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+             this.Close();
         }
     }
 }

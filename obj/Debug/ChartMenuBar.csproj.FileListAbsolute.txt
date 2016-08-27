@@ -63,3 +63,34 @@ C:\Users\yangyang123\Desktop\线状统计图A\obj\Debug\ChartMenuBar.frmDev.reso
 C:\Users\yangyang123\Desktop\线状统计图A\obj\Debug\ChartMenuBar.csproj.GenerateResource.Cache
 C:\Users\yangyang123\Desktop\线状统计图A\obj\Debug\ChartMenuBar.dll
 C:\Users\yangyang123\Desktop\线状统计图A\obj\Debug\ChartMenuBar.pdb
+C:\Users\yangyang123\Desktop\生产状况\bin\Debug\ChartMenuBar.dll
+C:\Users\yangyang123\Desktop\生产状况\bin\Debug\ChartMenuBar.pdb
+C:\Users\yangyang123\Desktop\生产状况\obj\Debug\ChartMenuBar.AccessChartTableForm.resources
+C:\Users\yangyang123\Desktop\生产状况\obj\Debug\ChartMenuBar.ChartForm.resources
+C:\Users\yangyang123\Desktop\生产状况\obj\Debug\ChartMenuBar.frmDev.resources
+C:\Users\yangyang123\Desktop\生产状况\obj\Debug\ChartMenuBar.csproj.GenerateResource.Cache
+C:\Users\yangyang123\Desktop\生产状况\obj\Debug\ChartMenuBar.dll
+C:\Users\yangyang123\Desktop\生产状况\obj\Debug\ChartMenuBar.pdb
+C:\Users\yangyang123\Desktop\产业发展\bin\Debug\ChartMenuBar.dll
+C:\Users\yangyang123\Desktop\产业发展\bin\Debug\ChartMenuBar.pdb
+C:\Users\yangyang123\Desktop\产业发展\obj\Debug\ChartMenuBar.AccessChartTableForm.resources
+C:\Users\yangyang123\Desktop\产业发展\obj\Debug\ChartMenuBar.ChartForm.resources
+C:\Users\yangyang123\Desktop\产业发展\obj\Debug\ChartMenuBar.frmDev.resources
+C:\Users\yangyang123\Desktop\产业发展\obj\Debug\ChartMenuBar.csproj.GenerateResource.Cache
+C:\Users\yangyang123\Desktop\产业发展\obj\Debug\ChartMenuBar.dll
+C:\Users\yangyang123\Desktop\产业发展\obj\Debug\ChartMenuBar.pdb
+C:\Users\yangyang123\Desktop\产业发展 - 副本\bin\Debug\ChartMenuBar.dll
+C:\Users\yangyang123\Desktop\产业发展 - 副本\bin\Debug\ChartMenuBar.pdb
+C:\Users\yangyang123\Desktop\产业发展 - 副本\obj\Debug\ChartMenuBar.AccessChartTableForm.resources
+C:\Users\yangyang123\Desktop\产业发展 - 副本\obj\Debug\ChartMenuBar.ChartForm.resources
+C:\Users\yangyang123\Desktop\产业发展 - 副本\obj\Debug\ChartMenuBar.TableChartForm.resources
+C:\Users\yangyang123\Desktop\产业发展 - 副本\obj\Debug\ChartMenuBar.TableForm.resources
+C:\Users\yangyang123\Desktop\产业发展 - 副本\obj\Debug\ChartMenuBar.frmDev.resources
+C:\Users\yangyang123\Desktop\产业发展 - 副本\obj\Debug\ChartMenuBar.csproj.GenerateResource.Cache
+C:\Users\yangyang123\Desktop\产业发展 - 副本\obj\Debug\ChartMenuBar.dll
+C:\Users\yangyang123\Desktop\产业发展 - 副本\obj\Debug\ChartMenuBar.pdb
+C:\Users\yangyang123\Desktop\产业发展 - 副本\obj\Debug\ChartMenuBar.dll.licenses
+C:\Users\yangyang123\Desktop\产业发展 - 副本\obj\Debug\ChartMenuBar.TotalForm.resources
+C:\Users\yangyang123\Desktop\产业发展 - 副本\obj\Debug\ChartMenuBar.TotalFormChart.resources
+C:\Users\yangyang123\Desktop\产业发展 - 副本\obj\Debug\ChartMenuBar.WaterTatalFormChart.resources
+C:\Users\yangyang123\Desktop\产业发展 - 副本\obj\Debug\ChartMenuBar.WaterTotalForm.resources

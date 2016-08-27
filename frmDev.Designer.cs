@@ -35,18 +35,14 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgDataSource = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnSimulate = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.janusSuperTip1 = new Janus.Windows.Common.JanusSuperTip(this.components);
-            this.txtEndYear = new System.Windows.Forms.NumericUpDown();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgDataSource)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEndYear)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -97,7 +93,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(696, 485);
+            this.tabPage2.Size = new System.Drawing.Size(670, 429);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "数据";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -109,34 +105,21 @@
             this.dgDataSource.Location = new System.Drawing.Point(3, 3);
             this.dgDataSource.Name = "dgDataSource";
             this.dgDataSource.RowTemplate.Height = 23;
-            this.dgDataSource.Size = new System.Drawing.Size(690, 479);
+            this.dgDataSource.Size = new System.Drawing.Size(664, 423);
             this.dgDataSource.TabIndex = 0;
             // 
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.txtEndYear);
-            this.groupBox2.Controls.Add(this.btnSimulate);
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.btnStart);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(687, 24);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(242, 429);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "参数设置";
-            // 
-            // btnSimulate
-            // 
-            this.btnSimulate.Location = new System.Drawing.Point(102, 166);
-            this.btnSimulate.Name = "btnSimulate";
-            this.btnSimulate.Size = new System.Drawing.Size(75, 23);
-            this.btnSimulate.TabIndex = 4;
-            this.btnSimulate.Text = "预估";
-            this.btnSimulate.UseVisualStyleBackColor = true;
-            this.btnSimulate.Click += new System.EventHandler(this.btnSimulate_Click);
             // 
             // btnStart
             // 
@@ -148,48 +131,20 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(10, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "模拟结束年份：";
-            // 
             // janusSuperTip1
             // 
             this.janusSuperTip1.AutoPopDelay = 2000;
             this.janusSuperTip1.ImageList = null;
             // 
-            // txtEndYear
+            // button1
             // 
-            this.txtEndYear.Location = new System.Drawing.Point(6, 84);
-            this.txtEndYear.Maximum = new decimal(new int[] {
-            2100,
-            0,
-            0,
-            0});
-            this.txtEndYear.Minimum = new decimal(new int[] {
-            2000,
-            0,
-            0,
-            0});
-            this.txtEndYear.Name = "txtEndYear";
-            this.txtEndYear.Size = new System.Drawing.Size(120, 21);
-            this.txtEndYear.TabIndex = 5;
-            this.txtEndYear.Value = new decimal(new int[] {
-            2015,
-            0,
-            0,
-            0});
+            this.button1.Location = new System.Drawing.Point(134, 165);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "关闭";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // frmDev
             // 
@@ -209,8 +164,6 @@
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgDataSource)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEndYear)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -222,12 +175,9 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView dgDataSource;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnSimulate;
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private ZedGraph.ZedGraphControl zedGraphControl1;
-        private System.Windows.Forms.NumericUpDown txtEndYear;
         private Janus.Windows.Common.JanusSuperTip janusSuperTip1;
+        private System.Windows.Forms.Button button1;
     }
 }

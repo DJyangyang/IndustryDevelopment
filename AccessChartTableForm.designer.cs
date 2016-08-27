@@ -33,6 +33,8 @@
             this.txbxMdbFileFullPath = new System.Windows.Forms.TextBox();
             this.btnMdbBrowse = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.cmbxZField = new System.Windows.Forms.ComboBox();
             this.cmbxValueDescribe1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -54,8 +56,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbxTableNames = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -123,6 +123,24 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "统计图表";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(110, 133);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(56, 17);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "值描述：";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(110, 78);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(78, 17);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "因变量（Z）:";
             // 
             // cmbxZField
             // 
@@ -325,24 +343,6 @@
             this.cmbxTableNames.TabIndex = 10;
             this.cmbxTableNames.TextChanged += new System.EventHandler(this.cmbxTableNames_TextChanged);
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(110, 78);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(78, 17);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "因变量（Z）:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(110, 133);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(56, 17);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "值描述：";
-            // 
             // AccessChartTableForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -359,7 +359,7 @@
             this.MinimumSize = new System.Drawing.Size(515, 405);
             this.Name = "AccessChartTableForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Access数据图表";
+            this.Text = "数据图表";
             this.Load += new System.EventHandler(this.AccessChartTableForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

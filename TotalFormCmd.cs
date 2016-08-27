@@ -1,4 +1,4 @@
-﻿using ESRI.ArcGIS.SystemUI;
+﻿using MyPluginEngine;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -7,29 +7,29 @@ using System.Text;
 
 namespace ChartMenuBar
 {
-    class frmDevCmd :MyPluginEngine.ICommand
+    class TotalFormCmd:MyPluginEngine.ICommand
     {
-        private MyPluginEngine.IApplication hk;
+          private MyPluginEngine.IApplication hk;
         private Bitmap m_hBitmap;
-        private ICommand cmd = null;
-        frmDev pfrmDev;
-        public frmDevCmd()
+
+        public TotalFormCmd()
         {
-            string str = @"..\Data\Image\Development\line.png";
+            string str = @"..\Data\Image\Development\chart.png";
             if (System.IO.File.Exists(str))
                 m_hBitmap = new Bitmap(str);
             else
                 m_hBitmap = null;
         }
-        #region ICommand成员
-        public System.Drawing.Bitmap Bitmap
+        #region ICommond成员
+
+        public Bitmap Bitmap
         {
             get { return m_hBitmap; }
         }
 
         public string Caption
         {
-            get { return "用水总量对比模拟"; }
+            get { return "分行业生产总值"; }
         }
 
         public string Category
@@ -54,39 +54,37 @@ namespace ChartMenuBar
 
         public string HelpFile
         {
-            get {return ""; }
+            get { return ""; }
         }
 
         public string Message
         {
-            get { return "用水总量对比模拟"; }
+            get { return "分行业生产总值"; }
         }
 
         public string Name
         {
-            get { return "frmDevCmd"; }
+            get { return "TotalFormCmd"; }
         }
 
         public void OnClick()
-        { 
-           //System.Windows.Forms.MessageBox.Show("模块正在开发中！");
-            pfrmDev = new frmDev();
-            pfrmDev.ShowDialog(); 
+        {
+           
+            TotalForm totalfrm = new TotalForm();
+            totalfrm.ShowDialog();
         }
 
-        public void OnCreate(MyPluginEngine.IApplication hook)
+        public void OnCreate(IApplication hook)
         {
             if (hook != null)
             {
                 this.hk = hook;
-                pfrmDev = new frmDev();
-                pfrmDev.Visible = false;
             }
         }
 
         public string Tooltip
         {
-            get { return "用水总量对比模拟"; }
+            get { return "分行业生产总值"; }
         }
         #endregion
     }

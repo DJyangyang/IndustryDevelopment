@@ -73,7 +73,7 @@ namespace ChartMenuBar
             cmbxZField.SelectedIndex = 0;
             //设置成图范围的行范围
             txbxStartRowNum.Text = "1";
-            txbxEndRowNum.Text = "12";
+            txbxEndRowNum.Text = "14";
         }
 
         /// <summary>

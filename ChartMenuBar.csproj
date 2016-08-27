@@ -51,6 +51,7 @@
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Janus.Windows.ButtonBar.v4, Version=4.0.38.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
     <Reference Include="Janus.Windows.Common.v4, Version=4.0.38.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -100,6 +101,45 @@
     <Compile Include="Library\DBOperate.cs" />
     <Compile Include="Library\ExcelFileOperate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableChartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableChartForm.Designer.cs">
+      <DependentUpon>TableChartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableForm.Designer.cs">
+      <DependentUpon>TableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableFormCmd.cs" />
+    <Compile Include="TotalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalForm.Designer.cs">
+      <DependentUpon>TotalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalFormChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalFormChart.Designer.cs">
+      <DependentUpon>TotalFormChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalFormCmd.cs" />
+    <Compile Include="WaterTatalFormChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaterTatalFormChart.Designer.cs">
+      <DependentUpon>WaterTatalFormChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaterTotalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaterTotalForm.Designer.cs">
+      <DependentUpon>WaterTotalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaterTotalFormCmd.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AccessChartTableForm.resx">
@@ -107,6 +147,25 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChartForm.resx">
       <DependentUpon>ChartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="TableChartForm.resx">
+      <DependentUpon>TableChartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableForm.resx">
+      <DependentUpon>TableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalForm.resx">
+      <DependentUpon>TotalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalFormChart.resx">
+      <DependentUpon>TotalFormChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaterTatalFormChart.resx">
+      <DependentUpon>WaterTatalFormChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaterTotalForm.resx">
+      <DependentUpon>WaterTotalForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

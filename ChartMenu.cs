@@ -21,7 +21,7 @@ namespace ChartMenuBar
 
         public long ItemCount
         {
-            get { return 2; }
+            get { return 5; }
         }
 
         public void GetItemInfo(int pos, ItemDef itemDef)
@@ -34,6 +34,18 @@ namespace ChartMenuBar
                     break;
                 case 1:
                     itemDef.ID = "ChartMenuBar.frmDevCmd";
+                    itemDef.Group = false;
+                    break;
+                case 2:
+                    itemDef.ID = "ChartMenuBar.TableFormCmd";
+                    itemDef.Group = false;
+                    break;
+                case 3:
+                    itemDef.ID = "ChartMenuBar.TotalFormCmd";
+                    itemDef.Group = false;
+                    break;
+                case 4:
+                    itemDef.ID = "ChartMenuBar.WaterTotalFormCmd";
                     itemDef.Group = false;
                     break;
                 default:

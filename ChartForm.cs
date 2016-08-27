@@ -19,6 +19,7 @@ namespace ChartMenuBar
         private string _legendText; //图例文本
         private string _legendtext;
         private string _zFieldName;
+       
         public ChartForm(DataTable dt, string xFieldName, string yFieldName,string zFieldaName, string legendText,string legendtext)
         {
             InitializeComponent();
@@ -30,19 +31,21 @@ namespace ChartMenuBar
             this._legendtext = legendtext;
         }
 
+        
+
         private void ChartForm_Load(object sender, EventArgs e)
         {
             try
             {
                 chart1.DataSource = this._dt;
                 chart1.DataBind();
-                chart1.Series[0].ChartType = SeriesChartType.FastLine;
+                chart1.Series[0].ChartType = SeriesChartType.Spline;
                 chart1.Series[0].LegendText = this._legendText;
                 chart1.Series[0].XValueMember = this._xFieldName;//绑定的文字信息（名称）(坐标横轴)
                 chart1.Series[0].YValueMembers = this._yFieldName;// 绑定的值（数据）(坐标纵轴)
                 //chart1.DataSource = this._dt;
                 //chart1.DataBind();
-                chart1.Series[1].ChartType = SeriesChartType.FastLine;
+                chart1.Series[1].ChartType = SeriesChartType.Spline;
                 chart1.Series[1].LegendText = this._legendtext;
                 chart1.Series[1].XValueMember = this._xFieldName;//绑定的文字信息（名称）(坐标横轴)
                 chart1.Series[1].YValueMembers = this._zFieldName;// 绑定的值（数据）(坐标纵轴)

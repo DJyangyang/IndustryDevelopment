@@ -42,7 +42,7 @@
             // 
             this.btnExportImg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExportImg.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnExportImg.Location = new System.Drawing.Point(336, 408);
+            this.btnExportImg.Location = new System.Drawing.Point(638, 413);
             this.btnExportImg.Name = "btnExportImg";
             this.btnExportImg.Size = new System.Drawing.Size(75, 30);
             this.btnExportImg.TabIndex = 8;
@@ -54,7 +54,7 @@
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnClose.Location = new System.Drawing.Point(417, 408);
+            this.btnClose.Location = new System.Drawing.Point(719, 413);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 30);
             this.btnClose.TabIndex = 8;
@@ -64,6 +64,9 @@
             // 
             // chart1
             // 
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea1.AxisX2.MajorGrid.Enabled = false;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -72,16 +75,18 @@
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
+            series1.YValuesPerPoint = 2;
             series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series2.Legend = "Legend1";
             series2.Name = "Series2";
+            series2.YValuesPerPoint = 2;
             this.chart1.Series.Add(series1);
             this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(500, 402);
+            this.chart1.Size = new System.Drawing.Size(802, 402);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
             // 
@@ -89,11 +94,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 443);
+            this.ClientSize = new System.Drawing.Size(802, 448);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnExportImg);
-            this.MaximumSize = new System.Drawing.Size(516, 481);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ChartForm";
             this.Text = "二维统计图";
             this.Load += new System.EventHandler(this.ChartForm_Load);
